@@ -1,0 +1,20 @@
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e712356de88c82db8012d8d4a0a575a5&libraries=services"></script>
+<div id="map" style="width:95%;height:500px;"></div>
+<section id="main_table">
+	<table style="margin-top:20px;">	
+		<tr class="table_tr">		  
+			<th style="width:8%;">시군명 </th>
+			<th style="width:15%;">센터명 </th>
+			<th style="width:12%;">전화번호</th>
+			<th style="width:20%;">홈페이지</th>
+			<th style="width:20%;">주소</th>
+		</tr>
+
+		<tr>
+			<td><?=$row["city"]?></td>		
+			<td><?=$row["center"]?></td>
+			<td><?=$row["tel"]?></td>	
+			<td><a href="#"><?=$row["homepage"]?></td>
+			<td><?=$row["address"]?></td>		
+		 </tr>	
+	</table>

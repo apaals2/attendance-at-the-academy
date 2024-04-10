@@ -1,0 +1,31 @@
+ <nav class="nav">
+
+        <ul>
+			<li><a href="check_main.php" >출석체크</a></li>
+            <li style="background-color:#242e60;"><a href="work.php" style="color:#fff;">일자리센터정보 </a></li>
+			<li><a href="location.php">학원위치</a></li>
+        </ul>
+    </nav>
+</header>
+
+	<h2>일자리센터 정보</h2>
+	<form action="work.php" method="get" ><!-- 검색 -->
+	 <select name="s_key">
+        <option value="" selected>검색기준</option>
+        <option value="city">시군명</option>
+        <option value="center">센터명</option>
+    </select>
+    <input type="text" name="s_value">
+    <input type="submit" value="검색">
+</form>
+
+
+	<section id="main_table"><!--ㅡmain_table scroll-->
+	<table>	
+		  <tr class="table_tr">		  
+			<th style="width:8%;">시군명 </th>
+			<th style="width:15%;">센터명 </th>
+			<th style="width:12%;">전화번호</th>
+			<th style="width:20%;">홈페이지</th>
+			<th style="width:20%;">주소</th>
+		  </tr>
